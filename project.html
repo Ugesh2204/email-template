@@ -9,7 +9,18 @@
 	<title>HTML Email Template Boilerplate</title>
    <style type="text/css">
    	@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
-
+      table {
+         border-spacing: 0;
+      }
+      td {
+         padding:0;
+      }
+      p {
+         font-size:15px;
+      }
+      img {
+         border:0;
+      }
 		@media screen and (max-width: 599.98px) {
 
       }
@@ -23,6 +34,11 @@
 
       }
 	</style>
+   <!--[if (gte mso 9)|(IE)]>
+   <style type="text/css">
+     table{border-collapse: collapse!important;}
+   </style>   
+<![endif]-->
 </head>
 <body style="Margin:0;padding:0;min-width:100%;background-color:#dde0e1;">
 <!--[if (gte mso 9)|(IE)]>
@@ -44,6 +60,15 @@ padding-bottom:48px;">
       </div>
        <!--Preheader text End-->
 
+       <!--[if (gte mso 9)|(IE)]>
+         <table width="600" align="center" style="border-spacing:0;
+         color:#565656" role="presentation">
+         <tr>
+            <td style="padding:0">
+      <![endif]-->
+      <table align="center" style="border-spacing:0; color:#565656;
+         font-family: 'Lato', sans-serif, Arial, Helvitical!important;
+         background-color:#fafdfe;Margin:0;padding:0;width:100%;max-width:600px;" role="presentation">
       <h1>Test</h1>
 
 
@@ -73,6 +98,15 @@ padding-bottom:48px;">
 
 <!-- START FOOTER -->
 <!-- END FOOTER -->
+
+      </table>
+
+         <!--[if (gte mso 9)|(IE)]>
+         </td>
+         </tr>
+         </table>
+      <![endif]-->
+
       </div>
    </center>
 </body>
